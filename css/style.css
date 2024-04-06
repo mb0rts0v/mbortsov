@@ -1,0 +1,236 @@
+.content{
+    font-family: "Roboto Slab", serif;
+    color: #324950;
+    background-color: #F7F7F7;
+    font-size: 20px;
+    flex: 1 1 auto;
+}
+.search{
+    font-weight: 500;
+    color: #324950;
+    font-size: 13px;
+    width: 50%;
+}
+.searchbar{
+    width: 105%;
+}
+.header{
+    padding: 10px 0;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    /* background-color: #fff; */
+}
+.menu{
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    color: #324950;
+}
+.wrapper{
+   max-width: 60vw;
+   width: 100%;
+   margin: 0 auto;
+}
+.nav{
+    font-size: 12px;
+}
+.banner{
+    width: 100%;
+    height: 850px;
+    background-image: url(../images/bg.png);
+    z-index: -1;
+    background-size: cover;
+}
+.search_line{
+    height: 1px;
+    width: 100%;
+    background-color: #324950;
+    margin-top: 5px;
+}
+.search_image{
+    max-width: 18px;
+    max-height: 18px;
+    height: 100%;
+    width: 100%;   
+}
+.logo{
+    height: 11vh;
+}
+h1{
+    color: #735440;
+}
+.textbanner{
+ width: 100%;
+ height: 100%;
+ align-content: center;
+ justify-content: center;
+}
+.banner_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 	100%;
+    max-height: 180px;
+    height: 100%;
+}
+.button{
+    max-width: 160px;
+    width: 	100%;
+    max-height: 55px;
+    height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.banner_text{
+    font-weight: 600;
+    font-size: 48;
+    color: #735440;
+}
+.product_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    height: 180px;
+    font-size: 20px;
+}
+.product_image{
+    margin-bottom: 15px;
+}
+.title{
+    font-size: 64px;
+    font-weight: 700;
+}
+.vision_mission_block{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.undertitle{
+    margin: 0 0 20px 0;
+}
+.vision_mission{
+    background-image: url(..//images/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vision_mission_text{
+    margin: 0 20px;
+}
+.activity{
+    background-color: #EDEDED;
+    height: 640px;
+
+    width: 100%;
+}
+.activity_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.activity_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    width: 100%;
+}
+.activity_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.activity_title{
+    color: #57984C;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+.activity_images{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+    margin: -50px 0 40px 0;
+}
+.activity_ltext{
+    text-align: center;
+    max-height: 55px;
+    height: 100%;
+    font-size: 18px;
+    width: 100%;
+}
+.activity_line{
+    height: 1px;
+    max-width: 183px;
+    width: 100%;
+    background-color: #57984C;
+    margin: 0 0 10px 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.footer_lower{
+    background-color: #324950;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B9B9B9;
+    height: 50px;
+}
+.links a{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.footer_upper{
+    background-color: #2D3F45;
+    height: 76px;
+    display: flex;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    max-width: 740px;
+    width: 100%;
+    font-weight: 600;
+    text-decoration: none;
+}
+.footer_upper .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.soc_icon{
+    max-width: 32px;
+    max-height: 32px;
+    height: 100%;
+    width: 100%;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 220px;
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+}
+.img_btn_container{
+    position: relative;
+}
+.img_btn{
+    position: absolute;
+    right: 40%;
+    top: 40%;
+}
