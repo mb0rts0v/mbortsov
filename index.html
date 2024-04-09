@@ -12,7 +12,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    </head>
    <body>
-      
       <div class="header">
          <div class="wrapper">
             <div class="row justify-content-between">
@@ -30,12 +29,12 @@
                   <div class="menu">
                      <div class="container text-center">
                         <div class="row row-cols-auto nav">
-                           <div class="col"><a href=""></a>Home</div>
-                           <div class="col"><a href=""></a>Company Profile</div>
-                           <div class="col"><a href=""></a>Products</div>
-                           <div class="col"><a href=""></a>Services</div>
-                           <div class="col"><a href=""></a>R & D</div>
-                           <div class="col"><a href=""></a>Contact</div>
+                           <div class="col"><a href="index.html">Home</a></div>
+                           <div class="col"><a href="">Company Profile</a></div>
+                           <div class="col"><a href="tomato_all.html">Products</a></div>
+                           <div class="col"><a href="">Services</a></div>
+                           <div class="col"><a href="">R & D</a></div>
+                           <div class="col"><a href="">Contact</a></div>
                         </div>
                      </div>
                   </div>
@@ -53,34 +52,33 @@
             </div>
          </div>
       </div>
-      <div class="stripe">
-        <div class="row row-cols-7" >
-            <div class="col product_items ">
-               <img src="images/wheat.png" class="product_image">
+      <div class="stripe d-flex justify-content-around align-items-center">
+            <div class=" stripe_items ">
+               <img src="images/wheat.png" class="stripe_image">
                <p>Wheat</p>
             </div>
-            <div class="col product_items">
-               <img src="images/wm.png" class="product_image">
+            <div class=" stripe_items">
+               <img src="images/wm.png" class="stripe_image">
                <p>Confection Watermelon</p>
             </div>
-            <div class="col product_items">
-               <img src="images/clover.png" class="product_image">
+            <div class=" stripe_items">
+               <img src="images/clover.png" class="stripe_image">
                <p>Clover</p>
             </div>
-            <div class="col product_items">
-               <img src="images/sunflower1.png" class="product_image">
+            <div class=" stripe_items">
+               <img src="images/sunflower1.png" class="stripe_image">
                <p>Confection Sunflower</p>
             </div>
-            <div class="col product_items">
-               <img src="images/tomato.png" class="product_image">
+            <div class=" stripe_items">
+               <img src="images/tomato.png" class="stripe_image">
                <p>Tomato</p>
             </div>
-            <div class="col product_items">
-               <img src="images/eggplant.png" class="product_image">
+            <div class=" stripe_items">
+               <img src="images/eggplant.png" class="stripe_image">
                <p>Eggplant P/O</p>
             </div>
-            <div class="col product_items">
-               <img src="images/sunflower2.png" class="product_image">
+            <div class=" stripe_items">
+               <img src="images/sunflower2.png" class="stripe_image">
                <p>Ornamental Sunflower</p>
             </div>
         </div>
@@ -165,5 +163,23 @@
          </div>
       </div> 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+         var header = document.querySelector('.header'); 
+         var header = document.querySelector('.header');
+         window.onscroll = function(){
+         
+         if(window.scrollY > 150) { 
+         
+            header.style.background = 'white'; 
+         
+         } else {
+         
+            header.style.background = 'transparent'; 
+         
+         }
+         
+         }
+         
+         </script>
    </body>
 </html>
