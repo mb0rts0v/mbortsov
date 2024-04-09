@@ -118,6 +118,7 @@ h1{
 .title{
     font-size: 64px;
     font-weight: 700;
+    color: #324950;
 }
 .vision_mission_block{
     margin: 20px 0;
@@ -192,6 +193,8 @@ h1{
 body{
     display: flex;
     flex-direction: column;
+    font-family: "Roboto Slab", serif;
+    color: #324950;
 }
 .footer_lower{
     background-color: #324950;
