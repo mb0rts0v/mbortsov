@@ -4,6 +4,7 @@
     background-color: #F7F7F7;
     font-size: 20px;
     flex: 1 1 auto;
+    margin: 14vh 0 0 0;
 }
 .col a{
     text-decoration: none;
@@ -52,7 +53,6 @@
     background-image: url(../images/bg_tomato_all.png);
     z-index: -1;
     background-size: cover;
-    margin: 14vh 0 0 0;
 }
 .search_line{
     height: 1px;
@@ -163,7 +163,7 @@ h1{
     align-items: center;
     flex-direction: column;
 }
-.activity_title{
+.green_title{
     color: #57984C;
     font-weight: 600;
     font-size: 24px;
@@ -183,12 +183,12 @@ h1{
     font-size: 18px;
     width: 100%;
 }
-.activity_line{
+.green_line{
     height: 1px;
     max-width: 183px;
     width: 100%;
     background-color: #57984C;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 body{
     display: flex;
@@ -323,7 +323,7 @@ margin: 20px 0;
     background-image: url(../images/product_image.png);
     background-size: cover;
 }
-.product_desc{
+.product_desc a{
     background-color: #fff;
     color: #57984C;
     display: flex;
@@ -332,6 +332,7 @@ margin: 20px 0;
     justify-content: center;
     text-align: center;
     padding: 5px;
+    text-decoration: none;
 }
 .product_title{
     font-size: 20px;
@@ -339,4 +340,73 @@ margin: 20px 0;
 }
 .product_subtitle{
     font-size: 16px;
+}
+.return_block a{
+    color: #57984C;
+    font-size: 14px;
+    text-decoration: none;
+}
+.tomato_one_container{
+    margin-top: 10px;
+    background-image: url(../images/bg_t_one.png);
+    background-size: cover;
+    min-height: 1200px;
+    height: 100%;
+    
+}
+.tomato_tag{
+    font-size: 54px;
+    color: #324950;
+    font-weight: 700;
+}
+.tomato_title{
+    font-size: 54px;
+    color: #57984C;
+    font-weight: 700;
+}
+.tomato_excl{
+    color: #CF2333;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 0;
+}
+.tomato_icon{
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
+    margin: 0 30px 0 0;
+}
+.tomato_image{
+    max-height: 540px;
+    max-width: 540px;
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+}
+.tomato_list{
+    margin: 30px 0;
+    max-height: 150px;
+    height: 100%;
+}
+.tomato_list .green_title{
+    font-size: 20px;
+}
+.tomato_list_item{
+    font-size: 17px;
+}
+.green_dot{
+    margin: 0 15px 0 0;
+}
+.dbutton{
+    align-self: flex-end;
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 20px 0;
+}
+.tomato_list p{
+    font-size: 17px;
 }
