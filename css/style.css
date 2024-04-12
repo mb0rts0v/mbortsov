@@ -400,13 +400,25 @@ margin: 20px 0;
 .green_dot{
     margin: 0 15px 0 0;
 }
-.dbutton{
-    align-self: flex-end;
-    padding: 0;
-    border: none;
-    background: none;
-    margin: 20px 0;
-}
+
 .tomato_list p{
     font-size: 17px;
+}
+.button_pdf{
+    border: 2px solid #57984C;
+    border-radius: 60px;
+    height: 100%;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #57984C;
+}
+.button_pdf_href{
+    min-height: 55px;
+    min-width: 220px;
+    align-self: flex-end;
 }
