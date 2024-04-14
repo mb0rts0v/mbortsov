@@ -6,6 +6,14 @@
     flex: 1 1 auto;
     margin: 14vh 0 0 0;
 }
+.address_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 290px;
+    font-size: 17px;
+    text-align: center;
+}
 .col a{
     text-decoration: none;
     color: #2D3F45;
@@ -273,6 +281,10 @@ body{
     background-color: #FCF0F0;
     padding: 50px 0;
 }
+.form{
+    background-color: #F7F7F7;
+    padding: 50px 0 20px 0;
+}
 .paragraphs{
     font-size: 17px;
 }
@@ -422,3 +434,42 @@ margin: 20px 0;
     min-width: 220px;
     align-self: flex-end;
 }
+.input{
+    background: #fff;
+    border-radius: 10px;
+    height: 55px;
+    width: 100%;
+    border: 1px solid #DADADA;
+    padding: 10px 10px;
+}
+.form_block{
+    font-size: 17px;
+    margin: 20px 0;
+}
+.form_multiple{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button_send{
+    display: flex;
+    background-color: #57984C;
+    color: #FFF;
+    border-radius: 60px;
+    font-size: 17px;
+    min-width: 255px;
+    min-height: 55px;
+    align-items: center;
+    justify-content: center;
+}
+.form_multiple a{
+    text-decoration: none;
+}
+.address_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    min-height: 250px;
+}
+
