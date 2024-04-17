@@ -1,0 +1,228 @@
+@media(max-width:1024px)
+{
+    .activity_container{
+        flex-direction: column;
+    }
+    .activity_block{
+        text-align: center;
+    }
+    .menu{
+        font-size: 14px;
+        min-width: 440px;	
+    }
+    .vision_mission_image{
+        max-width: 200px;
+        width: 100%;
+        height: 100%;
+    }
+    .vision_mission_block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .vision_mission_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .icons{
+        margin: 10px 0;
+    }
+    .links a{
+        font-size: 12px;
+        margin: 10px 10px;
+    }
+    .stripe_items{
+        font-size: 16px;
+    }
+    .footer .wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner_text{
+        text-align: center;
+        font-size: 36px;
+    }
+    .title{
+        font-size: 48px;
+    }
+    .banner_container{
+        max-height: 130px;
+    }
+    .banner{
+        height: 650px;
+    }
+    .banner2{
+        height: 350px;
+        background-position: center;
+    }
+    .tomato_tag{
+        font-size: 42px;
+    }
+    .tomato_title{
+        font-size: 42px;
+    }
+    .tomato_excl{
+        font-size: 24px;
+    }
+    .button_send{
+        min-width: 200px;
+    }
+}
+@media(max-width:768px)
+{
+    .menu_item{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .table{
+        flex-direction: column;
+    }
+    .table_block{
+        max-width: none;
+        margin: 0 0 40px 0;
+    }
+    .tomato_tag{
+        font-size: 36px;
+    }
+    .tomato_title{
+        font-size: 36px;
+    }
+    .tomato_excl{
+        font-size: 18px;
+    }
+    form .row{
+        flex-direction: column;
+    }
+    form .row div{
+        width: 100%;
+    }
+    .form_multiple{
+        flex-direction: column;
+    }
+    .form_multiple .input{
+        margin: 20px 0;
+    }
+    .button_send{
+        min-width: 255px;
+    }
+}
+@media(max-width:640px)
+{
+    .banner_text{
+        font-size: 28px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .links{
+        flex-direction: column;
+        text-align: center;
+    }
+    .links a{
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    .icons{
+        margin: 10px 0;
+    }
+    .footer .wrapper{
+        flex-direction: column;
+         
+    }
+    .stripe{
+        flex-direction: column;
+
+    }
+    .vision_mission_image{
+        min-width: 300px;
+        width: 100%;
+        height: 100%;
+    }
+    .activity_image img{
+        min-width: 100px;
+        width: 100%;
+    }
+    .img_btn_container .img_btn{
+        max-width: 50px;
+        width: 100%;
+    }
+    .vision_mission_text p{
+        font-size: 18px;
+    }
+    .redline_text{
+        font-size: 14px;
+    }
+    .tomato_block .tomato_col.d-flex{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .tomato_block{
+        flex-direction: column;
+    }
+    .tomato_col{
+        width: 100%;
+    }
+    .tomato_excl{
+        padding: 0 80px 0 0;
+    }
+    .tomato_excl img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .tomato_list_item, .tomato_list .btext, .tomato_list p, .address_text div{
+        font-size: 14px;
+    }
+    .tomato_list .green_title, .address_text .green_title {
+        font-size: 18px;
+    }
+    .tomato_image{
+        align-self: center;
+    }
+    
+}
+@media(max-width:480px){
+    .search{
+        display: none;
+    }
+    .search_adaptive{
+        display: block;
+    }
+    .stripe_items{
+        height: 150px;
+        padding: 20px 0;
+    }
+    .footer_lower p{
+        font-size: 12px;
+    }
+    .product_title{
+        font-size: 18px;
+    }
+    .product_subtitle{
+        font-size: 14px;
+    }
+    .product_image{
+        max-height: 180px;
+    }
+    .product_item{
+        margin: -80px 0;
+    }
+    .redline_text{
+        font-size: 12px;
+    }
+    .cont_mg{
+        margin: 170px 0 20px 0;
+    }
+    .tomato_tag{
+        font-size: 30px;
+    }
+    .tomato_title{
+        font-size: 30px;
+    }
+    .tomato_excl{
+        font-size: 14px;
+    }
+    
+}

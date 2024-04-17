@@ -1,10 +1,14 @@
+body{
+    background-color: #F7F7F7;
+}
 .content{
     font-family: "Roboto Slab", serif;
     color: #324950;
-    background-color: #F7F7F7;
     font-size: 20px;
     flex: 1 1 auto;
-    margin: 14vh 0 0 0;
+}
+.cont_mg{
+    margin: 130px 0 20px 0;
 }
 .address_text{
     display: flex;
@@ -14,9 +18,13 @@
     font-size: 17px;
     text-align: center;
 }
-.col a{
+.menu_item a{
     text-decoration: none;
     color: #2D3F45;
+    white-space: nowrap;
+}
+.menu_item{
+    margin: 0 10px;
 }
 .search{
     font-weight: 500;
@@ -40,10 +48,36 @@
     font-weight: 700;
     color: #324950;
 }
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown{
+    font-family: "Roboto Slab", serif;
+    color: #324950;
+    font-size: 16px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    display: none;
+    height: 60px;
+    width: 60px;
+}
+.search_adaptive{
+    font-weight: 500;
+    color: #324950;
+    font-size: 13px;
+    margin-top: 20px;
+    display: none;
+}
+.menu_icon img{
+    height: 100%;
+    width: 100%;
+}
 .wrapper{
-   max-width: 60vw;
+   max-width: 1100px;
    width: 100%;
    margin: 0 auto;
+   padding: 0 15px;
 }
 .nav{
     font-size: 12px;
@@ -57,7 +91,7 @@
 }
 .banner2{
     width: 100%;
-    height: 480px;
+    height: 680px;
     background-image: url(../images/bg_tomato_all.png);
     z-index: -1;
     background-size: cover;
@@ -75,7 +109,7 @@
     width: 100%;   
 }
 .logo{
-    height: 12vh;
+    min-height: 113px;
 }
 h1{
     color: #735440;
@@ -91,7 +125,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
+    max-width: 850px;
     width: 	100%;
     max-height: 180px;
     height: 100%;
@@ -107,7 +141,7 @@ h1{
 }
 .banner_text{
     font-weight: 600;
-    font-size: 48;
+    font-size: 48px;
     color: #735440;
 }
 .stripe_items{
@@ -119,6 +153,7 @@ h1{
     height: 180px;
     font-size: 20px;
     width: 100%;
+    text-align: center;
 }
 .stripe_image{
     margin-bottom: 15px;
@@ -133,6 +168,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .undertitle{
     margin: 0 0 20px 0;
@@ -141,14 +177,24 @@ h1{
     background-image: url(..//images/bg2.png);
     background-repeat: no-repeat;
     background-position: center;
+    max-width: 100%;
+    background-color: #F7F7F7;
 }
 .vision_mission_text{
     margin: 0 20px;
 }
+.vision_mission_image{
+    min-width: 550px;
+    width: 100%;
+    height: 100%;
+}
+.vision_mission_image .img_vs{
+    width: 100%;
+    height: 100%;
+}
 .activity{
     background-color: #EDEDED;
-    height: 640px;
-
+    min-height: 640px;
     width: 100%;
 }
 .activity_container{
@@ -164,29 +210,24 @@ h1{
     justify-content: space-between;
     max-width: 260px;
     width: 100%;
+    margin-bottom: 20px;
 }
 .activity_block{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
+
 .green_title{
     color: #57984C;
     font-weight: 600;
     font-size: 24px;
     margin: 0 0 20px 0;
 }
-.activity_images{
-    display: flex; 
-    align-items: center;
-    justify-content: space-around; 
-    width: 100%;
-    margin: -50px 0 40px 0;
-}
 .activity_ltext{
     text-align: center;
-    max-height: 55px;
     height: 100%;
     font-size: 18px;
     width: 100%;
@@ -210,7 +251,7 @@ body{
     align-items: center;
     justify-content: center;
     color: #B9B9B9;
-    height: 50px;
+    min-height: 50px;
 }
 .links a{
     color: #FFFFFF;
@@ -221,7 +262,7 @@ body{
 }
 .footer_upper{
     background-color: #2D3F45;
-    height: 76px;
+    min-height: 76px;
     display: flex;
 }
 .links{
@@ -293,7 +334,7 @@ body{
     display: flex;
     justify-content: space-around;
     background: #fff;
-    max-height: 550px;
+    min-height: 550px;
     height: 100%;
     padding: 50px 20px;
 }
@@ -321,8 +362,11 @@ margin: 20px 0;
 }
 .btext{
     font-weight: 700;
+}
+.table .btext{
     font-size: 17px;
 }
+
 .product_item{
     width: 350px;
     height: 350px;
@@ -353,6 +397,9 @@ margin: 20px 0;
 .product_subtitle{
     font-size: 16px;
 }
+.product_list{
+    justify-content: center;
+}
 .return_block a{
     color: #57984C;
     font-size: 14px;
@@ -365,6 +412,16 @@ margin: 20px 0;
     min-height: 1200px;
     height: 100%;
     
+}
+.t2{
+    font-size: 48px;
+}
+.tomato_col{
+    width: 50%;
+}
+.tomato_block .tomato_col.d-flex{
+    flex-direction: column;
+    padding-left: 60px;
 }
 .tomato_tag{
     font-size: 54px;
@@ -392,11 +449,12 @@ margin: 20px 0;
     margin: 0 30px 0 0;
 }
 .tomato_image{
-    max-height: 540px;
     max-width: 540px;
+    align-self: flex-end;
+}
+.tomato_image img{
     width: 100%;
     height: 100%;
-    align-self: flex-end;
 }
 .tomato_list{
     margin: 30px 0;
@@ -433,6 +491,7 @@ margin: 20px 0;
     min-height: 55px;
     min-width: 220px;
     align-self: flex-end;
+    text-decoration: none;
 }
 .input{
     background: #fff;
@@ -441,6 +500,9 @@ margin: 20px 0;
     width: 100%;
     border: 1px solid #DADADA;
     padding: 10px 10px;
+}
+.form_multiple .input{
+    margin: 0 30px;
 }
 .form_block{
     font-size: 17px;
@@ -478,4 +540,3 @@ margin: 20px 0;
     display: inline-block;
     text-decoration: none;
 }
-
