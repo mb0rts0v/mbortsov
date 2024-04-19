@@ -108,6 +108,9 @@
     .button_send{
         min-width: 255px;
     }
+    .vision_mission_text {
+        margin: 0 0px;
+    }
 }
 @media(max-width:640px)
 {

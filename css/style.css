@@ -92,7 +92,7 @@ body{
 .banner2{
     width: 100%;
     height: 680px;
-    background-image: url(../images/bg_tomato_all.png);
+    background-image: url(../images/products/pineapple_bg.jpg);
     z-index: -1;
     background-size: cover;
 }
@@ -319,7 +319,7 @@ body{
     font-size: 17px;
 }
 .text_block{
-    background-color: #FCF0F0;
+    background-color: #f7ecd0;
     padding: 50px 0;
 }
 .form{
@@ -373,11 +373,14 @@ margin: 20px 0;
     margin: -40px 0;
 }
 .product_image{
-    max-height: 220px;
+    max-height: 230px;
+    max-width: 230px;
     height: 100%;
     width: 100%;
-    background-image: url(../images/product_image.png);
-    background-size: cover;
+    overflow: hidden;
+}
+.product_image img{
+    height: 100%;
 }
 .product_desc a{
     background-color: #fff;
@@ -450,11 +453,12 @@ margin: 20px 0;
 }
 .tomato_image{
     max-width: 540px;
+    max-height: 540px;
     align-self: flex-end;
+    overflow: hidden;
 }
 .tomato_image img{
     width: 100%;
-    height: 100%;
 }
 .tomato_list{
     margin: 30px 0;
