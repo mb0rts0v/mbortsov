@@ -12,13 +12,19 @@ var app = new Vue({
     ],
     product:[],
     btnVisible:0,
-
-
+    cart:[],
+    contactFields:{},
+    onSubmit:0,
+    currentOrder:[],
+    orderFields:{}
     },
     mounted:function(){
+        //window.localStorage.setItem('form_submitted', 0)
+        this.orderMade();
         this.getProduct();
         this.checkInCart();
-        // console.log("cart: " + window.localStorage.getItem("cart").split(","));
+        this.getCart();
+        console.log(window.localStorage.getItem('contact'));
     },
     methods:{
         addItem:function(id){
@@ -50,6 +56,41 @@ var app = new Vue({
         },
         checkInCart:function(){
             if(this.product	&& this.product.id && window.localStorage.getItem('cart').split(',').indexOf(String(this.product.id))!=-1) this.btnVisible = 1;
-        }
+        },
+        getCart: function() {
+            var cartIds = window.localStorage.getItem('cart').split(',');
+            if (cartIds) {
+                this.cart = this.products.filter(product => cartIds.includes(String(product.id)));
+                console.log(this.cart);
+            }
+        },
+        deleteFromCart:function(id){
+                var index = this.cart.findIndex(item => item.id == id);
+            if(index !== -1){
+                this.cart.splice(index, 1);
+                window.localStorage.setItem('cart', this.cart.map(item => item.id).join());
+            }
+            if(!this.cart.length == 0){
+                Cart=1;
+            }
+        },
+        makeOrder: function() {
+            this.onSubmit = 1;
+            this.currentOrder = this.cart;
+            window.localStorage.setItem('form_submitted', this.onSubmit);
+            window.localStorage.setItem('contact', JSON.stringify(this.contactFields));
+            window.localStorage.setItem('order', JSON.stringify(this.currentOrder));
+            this.cart = [];
+            window.localStorage.removeItem('cart');
+        },
+        
+        orderMade: function() {
+            if (window.localStorage.getItem('form_submitted') == 1) {
+                this.onSubmit = 1;
+                this.contactFields = JSON.parse(window.localStorage.getItem('contact'));
+                this.currentOrder = JSON.parse(window.localStorage.getItem('order'));
+            }
+        },
+        
     }
 });
